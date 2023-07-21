@@ -1,0 +1,110 @@
+/* css code for to-do list */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: 'PT Sans', sans-serif;
+}
+
+body{
+    background-color: rgb(134, 122, 209);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.division{
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgb(139, 81, 81);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.search{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+.bar{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background-color: #eee;
+}
+
+.add{
+    pointer-events: none;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    opacity: .6;
+    background-color:rgb(43, 184, 97);
+}
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 50px 0;
+    padding-top: 40px;
+    color: black;
+}
+
+.footer{
+    padding: 50px 0;
+    color: rgb(247, 247, 247);
+    font-size: 14px;
+}
+
+.add.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.item{
+    padding: 11px;
+    border-radius: 6px;
+    align-items: center;
+    box-shadow: 0 2px 5px rgb(66, 32, 32);
+    justify-content: space-between;
+    margin-bottom: 20px;
+    display: flex;
+}
+.tasks{
+    width: 100%;
+    margin-top: 30px;
+}
+.item-btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.item p{
+    font-size: 16px;
+    font-weight: 5 00;
+    color: black;
+    letter-spacing: 1px;
+}
+.item.completed p{
+    text-decoration: line-through 2px;
+    color: #11111170;
+}
+.item-btn i{
+    color: rgb(43, 184, 97);
+    cursor: pointer;
+    font-size: 18px;
+}
